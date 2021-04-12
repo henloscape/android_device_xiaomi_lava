@@ -105,3 +105,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay
+
+# Fetch prebuilt vendor
+$(call inherit-product, device/xiaomi/lava-images/config.mk)
