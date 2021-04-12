@@ -32,6 +32,7 @@ def AddImage(info, input_zip, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
 def OTA_InstallEnd(info, input_zip):
+  info.script.AppendExtra('package_extract_file("install/vendor/vendor.img", map_partition("vendor"));')
   info.script.Print("Patching device-tree and verity images...")
   AddImage(info, input_zip, "dtbo.img", "/dev/block/platform/bootdevice/by-name/dtbo")
   AddImage(info, input_zip, "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta")
