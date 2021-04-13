@@ -15,6 +15,9 @@ pwifi() {
     cd frameworks/opt/net/wifi && wget https://github.com/PixelExperience/frameworks_opt_net_wifi/commit/3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch && git apply 3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch
 }
 
+pbm() {
+    cd build/make && wget https://github.com/LineageOS/android_build/commit/cd87c62f7aff72692c83e5331dccedb63a82415b.patch && git apply cd87c62f7aff72692c83e5331dccedb63a82415b.patch
+}
 mtkr() {
     git clone --depth=1 --single-branch https://github.com/PixelExperience/device_mediatek_sepolicy device/mediatek/sepolicy 
     git clone --depth=1 --single-branch https://github.com/PixelExperience/vendor_mediatek_interfaces vendor/mediatek/interfaces 
@@ -26,6 +29,8 @@ cd $ROOTDIR
 pfwb
 cd $ROOTDIR 
 pims 
+cd $ROOTDIR 
+pbm 
 cd $ROOTDIR 
 pwifi 
 cd $ROOTDIR 
