@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/descendant_lava.mk
+   $(LOCAL_DIR)/hentai_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_lava-user \
-    descendant_lava-userdebug \
-    descendant_lava-eng
+    hentai_lava-user \
+    hentai_lava-userdebug \
+    hentai_lava-eng

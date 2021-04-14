@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/descendant/config/common_full_phone.mk)
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -36,11 +36,10 @@ $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
-PRODUCT_NAME := descendant_lava
+PRODUCT_NAME := hentai_lava
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_MODEL := M2004J19C
-TARGET_FACE_UNLOCK_SUPPORT := YES
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
